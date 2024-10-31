@@ -1,0 +1,139 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+:root {
+  --ff: 'Overpass', sans-serif;
+  --fw-base: 400;
+  --fw-bold: 600;
+  
+  --color-white: hsl(0, 0%, 100%);
+  --color-lightGrey: hsl(217, 12%, 63%);
+  --color-slightDarkBlue: hsl(213, 19%, 20%);
+  --color-darkBlue: hsl(213, 19%, 15%);
+  --color-veryDarkBlue: hsl(216, 12%, 8%);
+  --color-orange: hsl(25, 97%, 53%);
+}
+
+body {
+  background-color: var(--color-veryDarkBlue);
+  margin: 2rem;
+  font-family: var(--ff);
+  display: grid;
+  height: 100vh;
+  place-items: center;
+  font-weight: var(--fw-base);
+}
+
+.hidden {
+    display: none !important; /* Initially hide the section */
+}
+
+.visible {
+    display: block; /* Shows the section */
+}
+
+main {
+  background-color: var(--color-darkBlue);
+  padding: 1.8rem;
+  border-radius: 0.9rem;
+}
+
+h1 {
+  color: var(--color-white);
+  font-weight: var(--fw-bold);
+}
+
+p {
+  color: var(--color-lightGrey);
+  font-size: .9rem;
+}
+
+form {
+  display: grid;
+  gap: 1rem;
+}
+
+.formSvg {
+  width: fit-content;
+  background-color: var(--color-slightDarkBlue);
+  padding: .7rem;
+  border-radius: 50%;
+}
+
+#rating-buttons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.rateBtn {
+  color: var(--color-lightGrey);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--color-slightDarkBlue);
+  width: 2.6rem;
+  height: 2.6rem;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 50%;
+}
+
+.rateBtn:hover {
+  color: var(--color-veryDarkBlue);
+  background-color: var(--color-orange);
+}
+.rateBtn:active {
+  color: var(--color-veryDarkBlue);
+  background-color: var(--color-white);
+}
+
+#submitBtn {
+  color: var(--color-veryDarkBlue);
+  background-color: var(--color-orange);
+  font-weight: var(--fw-bold);
+  letter-spacing: .2rem;
+  border: none;
+  border-radius: 1.7rem;
+  padding: .6rem 0;
+}
+#submitBtn:hover {
+  background-color: var(--color-white);
+}
+#submitBtn:active {
+  background-color: hsl(0, 0%, 60%);
+}
+
+#thank-you-state {
+  display: grid;
+  place-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+.ratingResult {
+  color: var(--color-orange);
+  background-color: var(--color-slightDarkBlue);
+  padding: .25rem .7rem;
+  border-radius: 1rem;
+}
