@@ -54,6 +54,7 @@ main {
   background-color: var(--color-darkBlue);
   padding: 1.8rem;
   border-radius: 0.9rem;
+  max-width: 25rem;
 }
 
 h1 {
