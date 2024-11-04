@@ -9,6 +9,7 @@ document.getElementById("submitBtn").addEventListener("click", function(event) {
     // Show the thank-you state section
     const thankYouSection = document.getElementById("thank-you-state");
     thankYouSection.classList.remove("hidden"); // Remove hidden class
+    thankYouSection.classList.add("visible");
 });
 
 // Update selected rating based on button clicks

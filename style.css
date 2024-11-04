@@ -43,11 +43,11 @@ body {
 }
 
 .hidden {
-    display: none !important; /* Initially hide the section */
+    display: none; /* Initially hide the section */
 }
 
 .visible {
-    display: block; /* Shows the section */
+    display: grid; /* Shows the section */
 }
 
 main {
@@ -126,7 +126,6 @@ form {
 }
 
 #thank-you-state {
-  display: grid;
   place-items: center;
   gap: 1rem;
   text-align: center;
